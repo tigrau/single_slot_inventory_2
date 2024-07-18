@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://5ejq587u82ah"]
+
+[ext_resource type="Texture2D" uid="uid://nc51gvee2net" path="res://assets/sword.png" id="1_cj011"]
+[ext_resource type="Script" path="res://resources/item.gd" id="2_jy74b"]
+
+[resource]
+script = ExtResource("2_jy74b")
+name = "test_item"
+icon = ExtResource("1_cj011")
+type = 1
+stackable = false

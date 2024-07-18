@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://nqak6f2ph54a"]
+
+[ext_resource type="Script" path="res://scenes/slot.gd" id="1_mct5j"]
+[ext_resource type="Script" path="res://scenes/label.gd" id="2_krggb"]
+
+[node name="Slot" type="PanelContainer"]
+custom_minimum_size = Vector2(60, 60)
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_mct5j")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 2
+size_flags_vertical = 8
+text = "x99"
+script = ExtResource("2_krggb")

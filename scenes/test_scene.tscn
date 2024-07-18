@@ -1,0 +1,42 @@
+[gd_scene load_steps=4 format=3 uid="uid://mrg8tith0ccv"]
+
+[ext_resource type="Script" path="res://scenes/inventory.gd" id="1_bh4d0"]
+[ext_resource type="PackedScene" uid="uid://nqak6f2ph54a" path="res://scenes/slot.tscn" id="2_nhui4"]
+[ext_resource type="Script" path="res://scenes/character.gd" id="3_fpyxd"]
+
+[node name="TestScene" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Inventory" type="GridContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_bh4d0")
+
+[node name="Slot" parent="Inventory" instance=ExtResource("2_nhui4")]
+layout_mode = 2
+
+[node name="Slot2" parent="Inventory" instance=ExtResource("2_nhui4")]
+layout_mode = 2
+
+[node name="Slot3" parent="Inventory" instance=ExtResource("2_nhui4")]
+layout_mode = 2
+
+[node name="Slot4" parent="Inventory" instance=ExtResource("2_nhui4")]
+layout_mode = 2
+
+[node name="Character" type="GridContainer" parent="."]
+layout_mode = 0
+offset_left = 199.0
+offset_top = 88.0
+offset_right = 259.0
+offset_bottom = 148.0
+script = ExtResource("3_fpyxd")
+
+[node name="Slot" parent="Character" instance=ExtResource("2_nhui4")]
+layout_mode = 2
